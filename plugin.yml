@@ -18,9 +18,6 @@ commands:
      gm1:
       description: Setzt den Gamemode auf CREATIVE
       usage:
-     eat:
-      description: Füllt das Essen eines Spielers auf
-      usage: 
      xpf:
       description: Füllt die Erfahrung um 1000 auf
       usage
