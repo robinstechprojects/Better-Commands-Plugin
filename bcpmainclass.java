@@ -39,10 +39,14 @@
                             if(p.hasPermission("bcp.heal"))
                                     p.setHealthScale(20);
                     //xp 
-		if(cmd.getName().equalsIgnoreCase("bcp.xp"))
+		if(cmd.getName().equalsIgnoreCase("xpf"))
 			if(p.hasPermission("bcp.xp"))
-				p.setExp(1000);
-		    		
+	        	p.setExp(1000);
+		   		
+		    //food
+		    if(cmd.getName.equalsIgnoreCase("food"))
+		    if(p.hasPermission("bcp.food"))
+		    p.setFoodLevel(20)
 			
                    
                     return true;
