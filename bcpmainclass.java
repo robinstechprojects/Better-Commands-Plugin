@@ -38,6 +38,12 @@
                     if(cmd.getName().equalsIgnoreCase("h"))
                             if(p.hasPermission("bcp.heal"))
                                     p.setHealthScale(20);
+                    //xp 
+		if(cmd.getName().equalsIgnoreCase("bcp.xp"))
+			if(p.hasPermission("bcp.xp"))
+				p.setExp(1000);
+		    		
+			
                    
                     return true;
 
