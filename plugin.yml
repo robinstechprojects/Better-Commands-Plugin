@@ -21,7 +21,7 @@ commands:
      eat:
       description: Füllt das Essen eines Spielers auf
       usage: 
-     xp:
+     xpf:
       description: Füllt die Erfahrung um 1000 auf
       usage
      food:
