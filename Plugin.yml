@@ -1,0 +1,27 @@
+name: BetterCommands
+version: Beta1.4
+author: Iborn LP
+website: ibornlp.jimdo.com
+
+
+main: bcp.bcpmain
+commands: 
+     h:
+      description: Heilt den Spieler 
+      usage:
+     gm2:
+      description: Setzt den Gamemode auf ADVENTURE
+      usage:
+     gm0:
+      description: Setzt den Gamemode auf SURVIVAL
+      usage:   
+     gm1:
+      description: Setzt den Gamemode auf CREATIVE
+      usage:
+     eat:
+      description: Füllt das Essen eines Spielers auf
+      usage: 
+     xp:
+      description: Füllt die Erfahrung um 1000 auf
+      usage 
+     
