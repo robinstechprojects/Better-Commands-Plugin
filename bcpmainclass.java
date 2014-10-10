@@ -46,8 +46,12 @@
 		    //food
 		    if(cmd.getName.equalsIgnoreCase("food"))
 		    if(p.hasPermission("bcp.food"))
-		    p.setFoodLevel(20)
-			
+		    p.setFoodLevel(20);
+		    
+		    //Biome
+		    if(cmd.getName.equalsIgnorecase("bio"))
+		    if(p.hasPermission("bcp.bio")
+		    p.sendMessage(p.getBiome());
                    
                     return true;
 
