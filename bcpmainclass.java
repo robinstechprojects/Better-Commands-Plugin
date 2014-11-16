@@ -23,7 +23,7 @@
                     this.getConfig().addDefault("bcp.commands.gm2.messages.Gamemode Changed to Adventure" , "Spielmodus zu Abenteuermodus geändert");
                     this.getConfig().options().copyDefaults(true);
                     this.saveConfig();
-                    system.out.printIn(" [bcp]Succesfully (re)loaded config);
+                    system.out.printIn(" [bcp]Succesfully (re)loaded config");
                     }
             
             public void onDisable()  {
