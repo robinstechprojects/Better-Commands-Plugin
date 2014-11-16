@@ -11,7 +11,21 @@
     public class bcpmain extends JavaPlugin {
             public void onEnable()  {
                     System.out.println("[bcp] geladen");
+                    
+                    initConfig();
             }
+                    
+                    private void initConfig(){
+                    this.reloadConfig();
+                    this.getConfig().options().header("Keep Antention");
+                    this.getConfig().addDefault("bcp.commands.gm0.messages.Gamemode Changed to Surivival" , "Spielmodus zu Überlebensmodus geändert");
+                    this.getConfig().addDefault("bcp.commands.gm1.messages.Gamemode Changed to Creative" , "Spielmodus zu Kreativmodus geändert");
+                    this.getConfig().addDefault("bcp.commands.gm2.messages.Gamemode Changed to Adventure" , "Spielmodus zu Abenteuermodus geändert");
+                    this.getConfig().options().copyDefaults(true);
+                    this.saveConfig();
+                    system.out.printIn(" [bcp]Succesfully (re)loaded config);
+                    }
+            
             public void onDisable()  {
                     System.out.println("[bcp] gestoppt");
             }
@@ -19,20 +33,21 @@
                     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
                     Player p = (Player)sender;
                     if(cmd.getName().equalsIgnoreCase("gm0"))
-                            if(p.hasPermission("bcp.gm0"))
-                            p.setGameMode(GameMode.SURVIVAL);
+                         p.setGameMode(GameMode.SURVIVAL);
+                            p.sendMessage(this.getConfig().getString("bcp.commands.gm0.messages.Gamemode Changed to Survival"));
                            
                     //gm1  
                    
                     if(cmd.getName().equalsIgnoreCase("gm1"))
-                            if(p.hasPermission("bcp.gm1"))
-                                    p.setGameMode(GameMode.CREATIVE);
+                     p.setGameMode(GameMode.CREATIVE);
+                     p.sendMessage(this.getConfig().getString("bcp.commands.gm1.messages.Gamemode Changed to Creative"));
            
                    
                     //gm2
                     if(cmd.getName().equalsIgnoreCase("gm2"))
-                            if(p.hasPermission("bcp.gm2"))
-                                    p.setGameMode(GameMode.ADVENTURE);
+                            
+                        p.setGameMode(GameMode.ADVENTURE);
+                       p.sendMessage(this.getConfig().getString("bcp.commands.gm2.messages.Gamemode Changed to Adventure"));
                    
                     //h
                     if(cmd.getName().equalsIgnoreCase("h"))
