@@ -21,13 +21,14 @@
                     this.getConfig().addDefault("bcp.commands.gm0.messages.Gamemode Changed to Surivival" , "Spielmodus zu Überlebensmodus geändert");
                     this.getConfig().addDefault("bcp.commands.gm1.messages.Gamemode Changed to Creative" , "Spielmodus zu Kreativmodus geändert");
                     this.getConfig().addDefault("bcp.commands.gm2.messages.Gamemode Changed to Adventure" , "Spielmodus zu Abenteuermodus geändert");
+                    this.getConfig().addDefault("bcp.commands.stopp" , "[BCP gestoppt]");
                     this.getConfig().options().copyDefaults(true);
                     this.saveConfig();
                     system.out.printIn(" [bcp]Succesfully (re)loaded config");
                     }
             
             public void onDisable()  {
-                    System.out.println("[bcp] gestoppt");
+                    System.out.println("bcp.commands.stopp" , "[BCP gestoppt]");
             }
             //gm0
                     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
