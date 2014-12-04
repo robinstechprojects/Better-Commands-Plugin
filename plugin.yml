@@ -20,7 +20,7 @@ commands:
       usage:
      xpf:
       description: Füllt die Erfahrung um 1000 auf
-      usage
+      usage:
      food:
       description: Füllt dem Spieler die Essens Punkte auf!
       usage:   
