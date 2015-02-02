@@ -37,7 +37,7 @@ public class BCP extends JavaPlugin {
 			return true;
 		}
 		
-		Player p = (Player)sender;
+		Player p = (Player) sender;
 	
 		//gm0
 		if(cmd.getName().equalsIgnoreCase("gm0")) {
@@ -60,11 +60,11 @@ public class BCP extends JavaPlugin {
 		//h
 		if(cmd.getName().equalsIgnoreCase("h"))
 			if(p.hasPermission("bcp.heal"))
-				p.setHealthScale(20);
+				p.setHealth(p.getMaxHealth());
 		//xp 
 		if(cmd.getName().equalsIgnoreCase("xpf"))
 			if(p.hasPermission("bcp.xp"))
-				p.setExp(1000);
+				p.setExp(p.getExp() + 1000);
 		//food	
 		if(cmd.getName().equalsIgnoreCase("food"))
 			if(p.hasPermission("bcp.food"))
@@ -75,6 +75,6 @@ public class BCP extends JavaPlugin {
 			if (p.hasPermission("bcp.bio"))
 					p.sendMessage(p.getWorld().getBiome(p.getLocation().getBlockX(), p.getLocation().getBlockZ()).name());
 						 
-		 	return true;
+		 return true;
 	}
 }
