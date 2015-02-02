@@ -1,10 +1,10 @@
 name: BetterCommands
 version: Beta1.4
-author: Iborn LP
+authors: [Iborn LP, FroznMine]
 website: ibornlp.jimdo.com
 
 
-main: bcp.bcpmain
+main: bcp.BCP
 commands: 
      h:
       description: Heilt den Spieler 
