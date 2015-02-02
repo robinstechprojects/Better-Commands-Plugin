@@ -1,28 +1,30 @@
 name: BetterCommands
-version: Beta1.4
+version: Beta1.4.2
 authors: [Iborn LP, FroznMine]
 website: ibornlp.jimdo.com
-
-
 main: bcp.BCP
 commands: 
-     h:
-      description: Heilt den Spieler 
-      usage:
-     gm2:
-      description: Setzt den Gamemode auf ADVENTURE
-      usage:
-     gm0:
-      description: Setzt den Gamemode auf SURVIVAL
-      usage:   
-     gm1:
-      description: Setzt den Gamemode auf CREATIVE
-      usage:
-     xpf:
-      description: Füllt die Erfahrung um 1000 auf
-      usage:
-     food:
-      description: Füllt dem Spieler die Essens Punkte auf!
-      usage:   
-      
-     
+  h:
+    description: Heilt den Spieler 
+    usage: /h
+  gm2:
+    description: Setzt den Gamemode auf ADVENTURE
+    usage: /gm2
+  gm0:
+    description: Setzt den Gamemode auf SURVIVAL
+    usage: /gm0
+  gm1:
+    description: Setzt den Gamemode auf CREATIVE
+    usage: /gm1
+  xpf:
+    description: Fuellt die Erfahrung um 1000 auf
+    usage: /xpf
+    permission: bcp.xp
+  food:
+    description: Fuellt dem Spieler die Essens Punkte auf!
+    usage: /food
+    permission: bcp.eat
+  bio:
+    description: Zeigt dem Spieler das Biom an in dem er sich befindet
+    usage: /bio
+    permission: bcp.bio 
