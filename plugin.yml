@@ -1,5 +1,5 @@
 name: BetterCommands
-version: Beta1.4.2
+version: Beta1.4.3
 authors: [Iborn LP, FroznMine]
 website: ibornlp.jimdo.com
 main: bcp.BCP
@@ -10,12 +10,15 @@ commands:
   gm2:
     description: Setzt den Gamemode auf ADVENTURE
     usage: /gm2
+    permission: bcp.gm2
   gm0:
     description: Setzt den Gamemode auf SURVIVAL
     usage: /gm0
+    permission: bcp.gm0
   gm1:
     description: Setzt den Gamemode auf CREATIVE
     usage: /gm1
+    permission: bcp.gm1
   xpf:
     description: Fuellt die Erfahrung um 1000 auf
     usage: /xpf
