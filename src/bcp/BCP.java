@@ -15,7 +15,7 @@ public class BCP extends JavaPlugin {
 	
 	private void initConfig() {
 		this.reloadConfig();
-		this.getConfig().options().header("Keep Antention");
+		this.getConfig().options().header("Keep Atention");
 		this.getConfig().addDefault("bcp.commands.gm0.messages.Gamemode Changed to Surivival" , "Spielmodus zu Überlebensmodus geändert");
 		this.getConfig().addDefault("bcp.commands.gm1.messages.Gamemode Changed to Creative" , "Spielmodus zu Kreativmodus geändert");
 		this.getConfig().addDefault("bcp.commands.gm2.messages.Gamemode Changed to Adventure" , "Spielmodus zu Abenteuermodus geändert");
@@ -41,18 +41,21 @@ public class BCP extends JavaPlugin {
 	
 		//gm0
 		if(cmd.getName().equalsIgnoreCase("gm0")) {
+			if(p.hasPermission("bcp.gm0"))
 			p.setGameMode(GameMode.SURVIVAL);
 			p.sendMessage(this.getConfig().getString("bcp.commands.gm0.messages.Gamemode Changed to Survival"));
 		}
 		
 		//gm1  
 		if(cmd.getName().equalsIgnoreCase("gm1")) {
+			if(p.hasPermission("bcp.gm1"))
 			p.setGameMode(GameMode.CREATIVE);
 			p.sendMessage(this.getConfig().getString("bcp.commands.gm1.messages.Gamemode Changed to Creative"));
 		}
 		
 		//gm2
 		if(cmd.getName().equalsIgnoreCase("gm2")) {
+			if(p.hasPermission("bcp.gm2"))
 			p.setGameMode(GameMode.ADVENTURE);
 			p.sendMessage(this.getConfig().getString("bcp.commands.gm2.messages.Gamemode Changed to Adventure"));
 		}
@@ -60,7 +63,7 @@ public class BCP extends JavaPlugin {
 		//h
 		if(cmd.getName().equalsIgnoreCase("h"))
 			if(p.hasPermission("bcp.heal"))
-				p.setHealth(p.getMaxHealth());
+				p.getMaxHealth();
 		//xp 
 		if(cmd.getName().equalsIgnoreCase("xpf"))
 			if(p.hasPermission("bcp.xp"))
