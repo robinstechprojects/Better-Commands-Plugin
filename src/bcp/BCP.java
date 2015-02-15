@@ -17,6 +17,9 @@ public class BCP extends JavaPlugin {
 		this.reloadConfig();
 		this.getConfig().options().header("Keep Atention");
 		this.getConfig().addDefault("bcp.commands.gm0.messages.Gamemode Changed to Surivival" , "Spielmodus zu Überlebensmodus geändert");
+		this.getConfig().addDefault("bcp.commands.food.messages.Food Filled" , "Essen aufgefuellt");
+		this.getConfig().addDefault("bcp.commands.xpf.XP Filled" , "XP Aufgefuellt");
+		this.getConfig().addDefault("bcp.commands.h.healed" , "Du wurdest geheilt!");
 		this.getConfig().addDefault("bcp.commands.gm1.messages.Gamemode Changed to Creative" , "Spielmodus zu Kreativmodus geändert");
 		this.getConfig().addDefault("bcp.commands.gm2.messages.Gamemode Changed to Adventure" , "Spielmodus zu Abenteuermodus geändert");
 		this.getConfig().addDefault("bcp.commands.stopp" , "[BCP gestoppt]");
@@ -63,21 +66,26 @@ public class BCP extends JavaPlugin {
 		//h
 		if(cmd.getName().equalsIgnoreCase("h"))
 			if(p.hasPermission("bcp.heal"))
-				p.getMaxHealth();
+				p.setHealth(20F);
+		        p.sendMessage("bcp.commands.h.healed");
+		
 		//xp 
 		if(cmd.getName().equalsIgnoreCase("xpf"))
 			if(p.hasPermission("bcp.xp"))
 				p.setExp(p.getExp() + 1000);
+		        p.sendMessage("bcp.commands.xpf.XP Filled");
 		//food	
 		if(cmd.getName().equalsIgnoreCase("food"))
 			if(p.hasPermission("bcp.food"))
 				p.setFoodLevel(20);
-			 
+			    p.sendMessage("bcp.commands.food.Food Filled !");
 		//Biome
 		if(cmd.getName().equalsIgnoreCase("bio"))
 			if (p.hasPermission("bcp.bio"))
 					p.sendMessage(p.getWorld().getBiome(p.getLocation().getBlockX(), p.getLocation().getBlockZ()).name());
 						 
+		
+		
 		 return true;
 	}
 }
