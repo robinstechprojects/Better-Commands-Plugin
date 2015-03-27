@@ -1,5 +1,5 @@
 name: BetterCommands
-version: Beta1.4.4
+version: Beta1.4.4.1
 authors: [Iborn LP, FroznMine]
 website: ibornlp.jimdo.com
 main: bcp.BCP
@@ -31,3 +31,11 @@ commands:
     description: Zeigt dem Spieler das Biom an in dem er sich befindet
     usage: /bio
     permission: bcp.bio 
+  bcp:
+    description: Prueft ob BCP Funktioniert
+    usage: /bcp
+    permission:
+  bettercommands:
+    description: Prueft ob BCP Funktioniert
+    usage: /bettercommands
+    permission:   
