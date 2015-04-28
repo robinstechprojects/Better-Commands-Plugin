@@ -9,6 +9,7 @@ public class BCP extends JavaPlugin {
 public void onEnable() {
 initConfig();
 }
+//Conf
 private void initConfig() {
 this.reloadConfig();
 this.getConfig().options().header("Keep Atention");
