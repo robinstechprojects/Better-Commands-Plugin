@@ -1,8 +1,8 @@
 name: BetterCommands
 version: Beta1.4.4.1
-authors: [Iborn LP, FroznMine]
+authors: [Robins Tech-Projects, FroznMine]
 website: ibornlp.jimdo.com
-main: bcp.BCP
+main: com.blogspot.robinstechprojects.BCP.BCPMain
 commands: 
   h:
     description: Heilt den Spieler 
