@@ -18,7 +18,7 @@ public class BCPMain extends JavaPlugin {
 		this.reloadConfig();
 		this.getConfig().options().header("Keep Atention");
 		this.getConfig().addDefault("bcp.commands.gm0.messages.Gamemode Changed to Surivival" , "Spielmodus zu Überlebensmodus geändert");
-		this.getConfig().addDefault("bcp.commands.food.messages.Food Filled" , "Essen aufgefuellt");
+		this.getConfig().addDefault("bcp.commands.food.Food Filled !" , "Essen aufgefuellt");
 		this.getConfig().addDefault("bcp.commands.xpf.XP Filled" , "XP Aufgefuellt");
 		this.getConfig().addDefault("bcp.commands.h.healed" , "Du wurdest geheilt!");
 		this.getConfig().addDefault("bcp.commands.gm1.messages.Gamemode Changed to Creative" , "Spielmodus zu Kreativmodus geändert");
