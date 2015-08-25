@@ -1,5 +1,10 @@
 package com.blogspot.robinstechprojects.BCP;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
 import org.bukkit.GameMode;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -11,12 +16,18 @@ public class BCPMain extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		initConfig();
+		
 	}
 
+	
+		
+		
+	
+
 	//Conf
-	private void initConfig() {
+	public void initConfig() {
 		this.reloadConfig();
-		this.getConfig().options().header("Keep Atention");
+		this.getConfig().options().header("Better Commands Plugin - Config -");
 		this.getConfig().addDefault("bcp.commands.gm0.messages.Gamemode Changed to Surivival" , "Spielmodus zu Überlebensmodus geändert");
 		this.getConfig().addDefault("bcp.commands.food.Food Filled !" , "Essen aufgefuellt");
 		this.getConfig().addDefault("bcp.commands.xpf.XP Filled" , "XP Aufgefuellt");
@@ -30,7 +41,6 @@ public class BCPMain extends JavaPlugin {
 		System.out.println(this.getConfig().getString("bcp.commands.start"));
 	}
 
-	@Override
 	public void onDisable() {
 		System.out.println(this.getConfig().getString("bcp.commands.stopp"));
 	}
@@ -69,7 +79,7 @@ public class BCPMain extends JavaPlugin {
 
 		//xp
 		if (cmd.getName().equalsIgnoreCase("xpf") && p.hasPermission("bcp.xp")) {
-			p.setExp(p.getExp() + 1000);
+			p.setExp(p.getExp() + 100);
 			p.sendMessage(this.getConfig().getString("bcp.commands.xpf.XP Filled"));
 		}
 
@@ -90,7 +100,32 @@ public class BCPMain extends JavaPlugin {
 		//BetterCommands
 		if(cmd.getName().equalsIgnoreCase("bettercommands"))
 			p.sendMessage("BetterCommands Plugin works perfect!");
-
+		
+	  
+	       
+	   
+		
 		return true;
+		
+	
+			
+		
+
+}
+	//Home Methoden
+	public static void save(Object obj, String path) throws Exception {
+		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(path));
+		oos.writeObject(obj);
+		oos.flush();
+		oos.close();
 	}
+
+	public static Object load(String path) throws Exception {
+		ObjectInputStream ois = new ObjectInputStream(new FileInputStream(path));
+		Object result = ois.readObject();
+		ois.close();
+		return result;
+	}
+
+
 }
