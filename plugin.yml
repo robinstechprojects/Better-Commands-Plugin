@@ -1,7 +1,7 @@
 name: BetterCommands
-version: Beta1.4.4.1
+version: V1.0 Build 001
 authors: [Robins Tech-Projects, FroznMine]
-website: ibornlp.jimdo.com
+website: robins-techprojects.blogspot.com
 main: com.blogspot.robinstechprojects.BCP.BCPMain
 commands: 
   h:
@@ -38,4 +38,5 @@ commands:
   bettercommands:
     description: Prueft ob BCP Funktioniert
     usage: /bettercommands
-    permission:   
+    permission:
+ 
