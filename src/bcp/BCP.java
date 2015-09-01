@@ -1,10 +1,5 @@
 package com.blogspot.robinstechprojects.BCP;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-
 import org.bukkit.GameMode;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -54,19 +49,19 @@ public class BCPMain extends JavaPlugin {
 		Player p = (Player) sender;
 
 		//gm0
-		if (cmd.getName().equalsIgnoreCase("gm0") && p.hasPermission("bcp.gm0")) {
+		if (cmd.getName().equalsIgnoreCase("gm 0") && p.hasPermission("bcp.gm0")) {
 			p.setGameMode(GameMode.SURVIVAL);
 			p.sendMessage(this.getConfig().getString("bcp.commands.gm0.messages.Gamemode Changed to Survival"));
 		}
 
 		//gm1
-		if (cmd.getName().equalsIgnoreCase("gm1") && p.hasPermission("bcp.gm1")) {
+		if (cmd.getName().equalsIgnoreCase("gm 1") && p.hasPermission("bcp.gm1")) {
 			p.setGameMode(GameMode.CREATIVE);
 			p.sendMessage(this.getConfig().getString("bcp.commands.gm1.messages.Gamemode Changed to Creative"));
 		}
 
 		//gm2
-		if (cmd.getName().equalsIgnoreCase("gm2") && p.hasPermission("bcp.gm2")) {
+		if (cmd.getName().equalsIgnoreCase("gm 2") && p.hasPermission("bcp.gm2")) {
 			p.setGameMode(GameMode.ADVENTURE);
 			p.sendMessage(this.getConfig().getString("bcp.commands.gm2.messages.Gamemode Changed to Adventure"));
 		}
@@ -105,27 +100,12 @@ public class BCPMain extends JavaPlugin {
 	       
 	   
 		
-		return true;
+		return true;}
+}
 		
 	
 			
 		
 
-}
-	//Home Methoden
-	public static void save(Object obj, String path) throws Exception {
-		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(path));
-		oos.writeObject(obj);
-		oos.flush();
-		oos.close();
-	}
 
-	public static Object load(String path) throws Exception {
-		ObjectInputStream ois = new ObjectInputStream(new FileInputStream(path));
-		Object result = ois.readObject();
-		ois.close();
-		return result;
-	}
-
-
-}
+	
