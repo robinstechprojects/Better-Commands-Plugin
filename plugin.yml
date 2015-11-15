@@ -1,23 +1,25 @@
-name: BetterCommands
-version: V1.0 Build 001
+name: BetterCommandsPlugin
+version: V1.0 Build #021
 authors: [Robins Tech-Projects, FroznMine]
 website: robins-techprojects.blogspot.com
 main: com.blogspot.robinstechprojects.BCP.BCPMain
 commands: 
-  h:
+  heal:
     description: Heilt den Spieler 
-    usage: /h
+    usage: /heal
+    permission: bcp.heal
+    aliases: [h]
   gm2:
     description: Setzt den Gamemode auf ADVENTURE
-    usage: /gm2
+    usage: /gm 2
     permission: bcp.gm2
   gm0:
     description: Setzt den Gamemode auf SURVIVAL
-    usage: /gm0
+    usage: /gm 0
     permission: bcp.gm0
   gm1:
     description: Setzt den Gamemode auf CREATIVE
-    usage: /gm1
+    usage: /gm 1
     permission: bcp.gm1
   xpf:
     description: Fuellt die Erfahrung um 1000 auf
@@ -39,4 +41,14 @@ commands:
     description: Prueft ob BCP Funktioniert
     usage: /bettercommands
     permission:
- 
+    aliases: [bcp]
+  selfclear:
+    description: Leert dein EIGENES Inventar
+    usage: /selfclear
+    aliases: [sclear]
+  afk:
+    description: Schaltet den AFK Status an
+    usage: /afk
+  re:
+    description: Schaltet den AFK Status aus     
+  
