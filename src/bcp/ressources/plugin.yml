@@ -2,7 +2,7 @@ name: BetterCommandsPlugin
 version: V1.0 Build #25
 authors: [Robins Tech-Projects, FroznMine]
 website: robins-techprojects.tk
-main: com.blogspot.robinstechprojects.BCP.BCPMain
+main: eu.techup.bcp
 commands: 
   heal:
     description: Heilt den Spieler 
