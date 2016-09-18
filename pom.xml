@@ -6,7 +6,16 @@
     <name>BetterCommands</name>
     <description>A lobby system plugin for Minecraft Bukkit Servers. It adds the possibility to manage multiple games with one plugin</description>
     
-
+<distributionManagement>
+        <repository>
+            <id>pesacraft-releases</id>
+            <url>https://github.com/robinstechprojects/Better-Commands-Plugin/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>pesacraft-snapshots</id>
+            <url>https://github.com/robinstechprojects/Better-Commands-Plugin</url>
+        </snapshotRepository>
+</distributionManagement>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
