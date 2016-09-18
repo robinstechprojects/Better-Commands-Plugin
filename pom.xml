@@ -5,6 +5,28 @@
     <version>1.1</version>
     <name>BetterCommands</name>
     <description>A lobby system plugin for Minecraft Bukkit Servers. It adds the possibility to manage multiple games with one plugin</description>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <minecraft.version>1.8.8</minecraft.version>
+        
+        <bukkit.version>R0.1-SNAPSHOT</bukkit.version>
+                
+        <vault.version>1.5.6</vault.version>
+        
+        <mongodb.version>3.1.1</mongodb.version>
+</properties>
+
+
+  <dependencies>
+        <dependency>
+            <groupId>org.bukkit</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>${minecraft.version}-${bukkit.version}</version>
+            <scope>provided</scope>
+</dependency>
+</dependencies>
+
   <build>
         <sourceDirectory>src/bcp/java</sourceDirectory>
         <defaultGoal>clean package</defaultGoal>
