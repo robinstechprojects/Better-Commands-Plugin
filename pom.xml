@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.pesacraft</groupId>
-    <artifactId>LobbySystem</artifactId>
+    <artifactId>BetterCommands</artifactId>
     <version>1.1</version>
     <name>BetterCommands</name>
     <description>A lobby system plugin for Minecraft Bukkit Servers. It adds the possibility to manage multiple games with one plugin</description>
@@ -24,7 +24,17 @@
         </repositories>
         </project>
         
-
+<build>
+        <sourceDirectory>src/bcp/java</sourceDirectory>
+        <defaultGoal>clean package</defaultGoal>
+        
+        <resources>
+            <resource>
+                <directory>src/bcp/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+</resources>
+</build>
 
 
     
