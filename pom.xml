@@ -9,11 +9,11 @@
 <distributionManagement>
         <repository>
             <id>pesacraft-releases</id>
-            <url>https://github.com/robinstechprojects/Better-Commands-Plugin/releases</url>
+            <url>https://repo.pesacraft.de/content/repositories/releases/</url>
         </repository>
         <snapshotRepository>
             <id>pesacraft-snapshots</id>
-            <url>https://github.com/robinstechprojects/Better-Commands-Plugin</url>
+            <url></url>https://repo.pesacraft.de/content/repositories/releases/</url>
         </snapshotRepository>
 </distributionManagement>
     
