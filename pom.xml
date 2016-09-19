@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.pesacraft</groupId>
     <artifactId>BetterCommands</artifactId>
-    <version>1.2</version>
+    <version>1.3</version>
     <name>BetterCommands</name>
     <description>A lobby system plugin for Minecraft Bukkit Servers. It adds the possibility to manage multiple games with one plugin</description>
     
