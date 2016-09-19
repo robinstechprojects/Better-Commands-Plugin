@@ -13,7 +13,7 @@
         </repository>
         <snapshotRepository>
             <id>pesacraft-snapshots</id>
-            <url></url>https://repo.pesacraft.de/content/repositories/releases/</url>
+            <url>https://repo.pesacraft.de/content/repositories/releases/</url>
         </snapshotRepository>
 </distributionManagement>
     
