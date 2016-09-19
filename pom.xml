@@ -42,7 +42,7 @@
   <build>
               <resources>
             <resource>
-                <directory>src/bcp/resources</directory>
+                <directory>src/bcp/ressources</directory>
                 <filtering>true</filtering>
             </resource>
 </resources>
