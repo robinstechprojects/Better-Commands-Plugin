@@ -25,14 +25,14 @@ public class BCPMain
 {
   public void onEnable()
   {
-    initConfig();
+    //initConfig();
     Bukkit.getServer().getPluginManager().registerEvents(this, this);
-    System.out.println(getConfig().getString("outputs.stop"));
+    //System.out.println(getConfig().getString("outputs.stop"));
   }
-  
+  /*
   public void initConfig()
   {
-    reloadConfig();
+    initConfig();
     
     getConfig().options().header("Better Commands Plugin - Configuration -");
     
@@ -59,7 +59,7 @@ public class BCPMain
     saveConfig();
     System.out.println(getConfig().getString("outputs.start"));
   }
-  
+  */
   public void onDisable()
   {
     System.out.println(getConfig().getString("outputs.stop"));

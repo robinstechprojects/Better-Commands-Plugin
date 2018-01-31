@@ -1,0 +1,61 @@
+name: BetterCommandsPlugin
+version: V1.1 Build #004
+authors: [Robins Tech-Projects]
+website: techup.eu
+main: BCPsrc.BCPMain
+commands: 
+  heal:
+    description: Heilt den Spieler 
+    usage: /heal
+    permission: bcp.heal
+    aliases: [h]
+  gm2:
+    description: Setzt den Gamemode auf ADVENTURE
+    usage: /gm 2
+    permission: bcp.gm2
+  gm0:
+    description: Setzt den Gamemode auf SURVIVAL
+    usage: /gm 0
+    permission: bcp.gm0
+  gm1:
+    description: Setzt den Gamemode auf CREATIVE
+    usage: /gm 1
+    permission: bcp.gm1
+  gm3:
+    description: Setzt den Gamemode auf Spectator
+    usage: 
+    permission: bcp.gm3
+  food:
+    description: Fuellt dem Spieler die Essens Punkte auf!
+    usage: /food
+    permission: bcp.eat
+  bio:
+    description: Zeigt dem Spieler das Biom an in dem er sich befindet
+    usage: /bio
+    permission: bcp.bio 
+  bcp:
+    description: Prueft ob BCP Funktioniert
+    usage: /bcp
+    permission:
+  bettercommands:
+    description: Prueft ob BCP Funktioniert
+    usage: /bettercommands
+    permission:
+    aliases: [bcp]
+  selfclear:
+    description: Leert dein EIGENES Inventar
+    usage: /selfclear
+    aliases: [sclear]
+  afk:
+    description: Schaltet den AFK Status an
+    usage: /afk
+    permission: bcp.afk
+  day:
+    description: Macht Tag
+    usage: /day
+    permission: bcp.time.day
+  night:
+    description: Macht Nacht
+    usage: /night
+    permission: bcp.time.night 
+  
