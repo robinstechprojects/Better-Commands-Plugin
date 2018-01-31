@@ -1,7 +1,7 @@
 name: BetterCommandsPlugin
-version: V1.0 Build #25
-authors: [Robins Tech-Projects, FroznMine]
-website: robins-techprojects.tk
+version: V1.1 Build #004
+authors: [Robins Tech-Projects]
+website: techup.eu
 main: com.blogspot.robinstechprojects.BCP.BCPMain
 commands: 
   heal:
@@ -25,10 +25,6 @@ commands:
     description: Setzt den Gamemode auf Spectator
     usage: 
     permission: bcp.gm3
-  xpf:
-    description: Fuellt die Erfahrung um 1000 auf
-    usage: /xpf
-    permission: bcp.xp
   food:
     description: Fuellt dem Spieler die Essens Punkte auf!
     usage: /food
@@ -53,5 +49,13 @@ commands:
   afk:
     description: Schaltet den AFK Status an
     usage: /afk
-
+    permission: bcp.afk
+  day:
+    description: Macht Tag
+    usage: /day
+    permission: bcp.time.day
+  night:
+    description: Macht Nacht
+    usage: /night
+    permission: bcp.time.night 
   
